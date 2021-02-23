@@ -72,18 +72,18 @@ input{
 @media (max-width: 550px) {
     
     input{
-        width: 400px;
+        width: 300px;
     }
     .white {
-      height: 250px;
-      width: 400px;
+      height: 150px;
+      width: 300px;
      
     }
     .white img {
       height: 125px;
     }
     .temp {
-      font-size: 50px;
+      font-size: 25px;
     }
     .weather-city {
       font-size: 20px;
@@ -93,11 +93,15 @@ input{
       height: 60px;
     }
     .white2 {
-        width: 400px;
+        width: 300px;
+        height: 70px;
      
     }
+    .weather{
+        font-size: 20px;
+    }
     .black {
-    width: 400px;
+    width: 300px;
       height: 100px;
      
     }
