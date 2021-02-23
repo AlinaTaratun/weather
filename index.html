@@ -8,33 +8,38 @@
     <title>weather</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
 </head>
 
 <body>
+    
     <div>
+         <input type="text"  id="window" placeholder="Введите название города">
+         <button id="cityB" onclick="fun();">OK</button>
         <div class="white">
+
             <div class="img">
                 <img src="./svg/weather-4_icon-icons.com_67739.svg" alt="str">
             </div>
         </div>
         <div class="white2">
-            <div class="temp">79</div>
+            <div class="temp">-</div>
             <div class="weather-city">
-                <div class="weather">Cloudy</div>
-                <div>Minsk</div>
+                <div class="weather">Нет</div>
+                <div class= "name">данных</div>
             </div>
             <div class="date">
-                <div>MAY</div>
-                <div>21</div>
+                <div>-</div>
+                <div></div>
             </div>
         </div>
         <div class="black">
-            <div><img src="./svg/weather_wind_icon_161268.svg" alt="str">
-            </div>
-            <div><img src="./svg/humidity_weather_icon_148585.svg" alt="str">
-            </div>
-            <div> <img src="./svg/rain_water_weather_icon_148574.svg" alt="str">
-            </div>
+            <img src="./svg/weather_wind_icon_161268.svg" alt="str">
+            <div class="wind"> - </div>
+            <img src="./svg/humidity_weather_icon_148585.svg" alt="str">
+            <div class = "humidity"> - </div>
+            <img src="./svg/rain_water_weather_icon_148574.svg" alt="str">
+            <div class = "pressure">  - </div>
         </div>
     </div>
 </body>
