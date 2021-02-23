@@ -69,3 +69,37 @@ input{
     width: 25px;   
     display: flex; 
 }
+@media (max-width: 550px) {
+    
+    input{
+        width: 400px;
+    }
+    .white {
+      height: 250px;
+      width: 400px;
+     
+    }
+    .white img {
+      height: 125px;
+    }
+    .temp {
+      font-size: 50px;
+    }
+    .weather-city {
+      font-size: 20px;
+    }
+    .date {
+      font-size: 20px;
+      height: 60px;
+    }
+    .white2 {
+        width: 400px;
+     
+    }
+    .black {
+    width: 400px;
+      height: 100px;
+     
+    }
+  }
+  
