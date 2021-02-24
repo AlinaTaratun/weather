@@ -15,11 +15,14 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=612063be1
     document.querySelector('.temp').innerHTML = Math.round(data.main.temp - 273) + '&deg;';
     document.querySelector('.humidity').innerHTML = data.main.humidity + '%';
     document.querySelector('.weather').textContent = data.weather[0]['description'];
-    document.querySelector('.img').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
+    document.querySelector('.img').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">`;
     document.querySelector('.pressure').innerHTML = Math.round(data.main.pressure * 0.75) + 'мм.рт.ст.';
-    document.querySelector('.wind').innerHTML = data.wind.speed + 'км/ч';
+    document.querySelector('.wind').innerHTML = data.wind.speed + 'м/ч';
+    document.querySelector('.month').innerHTML = new Date(data.dt * 1000).toDateString().split(" ")[1];
+    document.querySelector('.day').innerHTML = new Date(data.dt * 1000).toDateString().split(" ")[2];
   })
   .catch(function (error) {
     console.log('error', error)
+    alert("Error");
   })
 }
